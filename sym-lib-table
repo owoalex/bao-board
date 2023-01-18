@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name IR2130)(type Legacy)(uri ${KIPRJMOD}/IR2130.lib)(options "")(descr ""))
+  (lib (name MCU_RaspberryPi_RP2040)(type Legacy)(uri ${KIPRJMOD}/MCU_RaspberryPi_RP2040.lib)(options "")(descr ""))
+  (lib (name CustomInductors)(type Legacy)(uri ${KIPRJMOD}/CustomInductors.lib)(options "")(descr ""))
+)

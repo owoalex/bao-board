@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name rp2040)(type KiCad)(uri ${KIPRJMOD}/rp2040.pretty)(options "")(descr ""))
+  (lib (name Custom_Inductors)(type KiCad)(uri ${KIPRJMOD}/Custom_Inductors.pretty)(options "")(descr ""))
+)
