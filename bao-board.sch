@@ -410,7 +410,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2000 6100 1900
 Wire Wire Line
-	6100 1900 6550 1900
+	6100 1900 6350 1900
 Wire Wire Line
 	6550 1900 6550 2000
 Wire Wire Line
@@ -748,7 +748,7 @@ Bao-Board\n
 Text Notes 10600 7650 0    59   ~ 0
 1.2
 Text Notes 8150 7650 0    59   ~ 0
-2022-09-02
+2023-01-19
 $Comp
 L power:GNDPWR #PWR0102
 U 1 1 63912AA5
@@ -771,20 +771,6 @@ F 3 "" H 1600 2500 50  0001 C CNN
 	1    1600 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3950 3500 5300 3500
-Wire Wire Line
-	3950 3600 5300 3600
-Wire Wire Line
-	3950 3700 5300 3700
-Wire Wire Line
-	3950 3800 5300 3800
-Wire Wire Line
-	3950 3900 5300 3900
-Wire Wire Line
-	3950 4000 5300 4000
-Wire Wire Line
-	5300 4200 3950 4200
 Wire Wire Line
 	3350 2800 3350 2650
 Wire Wire Line
@@ -874,8 +860,6 @@ F 3 "~" H 4900 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3950 3100 5050 3100
-Wire Wire Line
 	5050 3100 5050 1550
 $Comp
 L Device:C C4
@@ -926,8 +910,6 @@ Connection ~ 5050 1550
 Wire Wire Line
 	5050 1550 5050 1200
 Wire Wire Line
-	3950 3200 4950 3200
-Wire Wire Line
 	4750 1550 4750 1200
 $Comp
 L Device:R R7
@@ -977,46 +959,17 @@ F 3 "~" H 4250 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 4300 4050 4300
-Wire Wire Line
-	3950 4400 4050 4400
-Wire Wire Line
-	3950 4500 4050 4500
-Wire Wire Line
-	3950 4600 4050 4600
-Wire Wire Line
-	3950 4700 4550 4700
-Wire Wire Line
 	4550 4700 4550 4600
-Wire Wire Line
-	3950 4800 4650 4800
 Wire Wire Line
 	4650 4800 4650 4500
 Wire Wire Line
 	4650 4500 4550 4500
 Wire Wire Line
-	3950 4900 4750 4900
-Wire Wire Line
 	4750 4900 4750 4400
 Wire Wire Line
 	4750 4400 4550 4400
 Wire Wire Line
-	3950 5000 4850 5000
-Wire Wire Line
-	4850 5000 4850 4300
-Wire Wire Line
 	4850 4300 4550 4300
-$Comp
-L power:GNDPWR #PWR0115
-U 1 1 63153FB7
-P 5850 5900
-F 0 "#PWR0115" H 5850 5700 50  0001 C CNN
-F 1 "GNDPWR" H 5854 5746 50  0000 C CNN
-F 2 "" H 5850 5850 50  0001 C CNN
-F 3 "" H 5850 5850 50  0001 C CNN
-	1    5850 5900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D5
 U 1 1 631548ED
@@ -1028,8 +981,6 @@ F 3 "~" H 4200 5900 50  0001 C CNN
 	1    4200 5900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3950 6400 5550 6400
 $Comp
 L Device:LED D6
 U 1 1 6328BFFE
@@ -1041,36 +992,6 @@ F 3 "~" H 4450 6000 50  0001 C CNN
 	1    4450 6000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4050 5900 3950 5900
-$Comp
-L Device:R R11
-U 1 1 632EAEFC
-P 4800 5900
-F 0 "R11" V 4593 5900 50  0000 C CNN
-F 1 "100Ω" V 4684 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4730 5900 50  0001 C CNN
-F 3 "~" H 4800 5900 50  0001 C CNN
-	1    4800 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 6335F748
-P 5050 6000
-F 0 "R12" V 4843 6000 50  0000 C CNN
-F 1 "100Ω" V 4934 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4980 6000 50  0001 C CNN
-F 3 "~" H 5050 6000 50  0001 C CNN
-	1    5050 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 5900 4350 5900
-Wire Wire Line
-	4950 5900 5550 5900
-Wire Wire Line
-	3950 6500 5350 6500
 NoConn ~ 5300 4500
 NoConn ~ 5300 4600
 NoConn ~ 3950 4100
@@ -1222,36 +1143,25 @@ Wire Wire Line
 Wire Wire Line
 	1200 4000 1200 2100
 $Comp
-L MCU_RaspberryPi_RP2040:RP2040 U2
-U 1 1 63810E10
-P 2700 4800
-F 0 "U2" H 2700 4324 79  0000 C CNN
-F 1 "RP2040" H 2700 2620 50  0001 C CNN
-F 2 "rp2040:RP2040" H 1950 4800 50  0001 C CNN
-F 3 "" H 1950 4800 50  0001 C CNN
-	1    2700 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H9
 U 1 1 63990A26
-P 3400 7000
-F 0 "H9" H 3500 7003 50  0001 L CNN
-F 1 "MountingHole_Pad" H 3500 6958 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3400 7000 50  0001 C CNN
-F 3 "~" H 3400 7000 50  0001 C CNN
-	1    3400 7000
+P 3400 7500
+F 0 "H9" H 3500 7503 50  0001 L CNN
+F 1 "MountingHole_Pad" H 3500 7458 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3400 7500 50  0001 C CNN
+F 3 "~" H 3400 7500 50  0001 C CNN
+	1    3400 7500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H10
 U 1 1 63990A2C
-P 3150 7000
-F 0 "H10" H 3250 7003 50  0001 C CNN
-F 1 "MountingHole_Pad" H 3250 6958 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3150 7000 50  0001 C CNN
-F 3 "~" H 3150 7000 50  0001 C CNN
-	1    3150 7000
+P 3150 7500
+F 0 "H10" H 3250 7503 50  0001 C CNN
+F 1 "MountingHole_Pad" H 3250 7458 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3150 7500 50  0001 C CNN
+F 3 "~" H 3150 7500 50  0001 C CNN
+	1    3150 7500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1265,55 +1175,6 @@ F 3 "" H 4000 6800 50  0001 C CNN
 	1    4000 6800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J3
-U 1 1 630B307B
-P 4350 5300
-F 0 "J3" H 4400 4967 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 4400 5526 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4350 5300 50  0001 C CNN
-F 3 "~" H 4350 5300 50  0001 C CNN
-	1    4350 5300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4050 5400 3950 5400
-Wire Wire Line
-	3950 5300 4050 5300
-Wire Wire Line
-	4050 5200 3950 5200
-Wire Wire Line
-	3950 5100 4050 5100
-Wire Wire Line
-	5350 6500 5350 5400
-Wire Wire Line
-	5350 5400 4950 5400
-Wire Wire Line
-	4950 5400 4950 5100
-$Comp
-L power:GNDPWR #PWR0117
-U 1 1 63B91A31
-P 4600 5400
-F 0 "#PWR0117" H 4600 5200 50  0001 C CNN
-F 1 "GNDPWR" H 4604 5246 50  0000 C CNN
-F 2 "" H 4600 5350 50  0001 C CNN
-F 3 "" H 4600 5350 50  0001 C CNN
-	1    4600 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0118
-U 1 1 63B922E6
-P 4800 5350
-F 0 "#PWR0118" H 4800 5200 50  0001 C CNN
-F 1 "+5V" H 4815 5523 50  0000 C CNN
-F 2 "" H 4800 5350 50  0001 C CNN
-F 3 "" H 4800 5350 50  0001 C CNN
-	1    4800 5350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4550 5200
-NoConn ~ 3950 5500
 NoConn ~ 3950 5600
 NoConn ~ 3950 5700
 NoConn ~ 1450 5600
@@ -1397,54 +1258,46 @@ Text Notes 650  4950 0    20   ~ 0
 NOTE: Max crystal ESR < 50Ω\nCrystal must tolerate 200uW \ndrive level minimum.
 Text Notes 650  6400 0    20   ~ 0
 NOTE: Adjust caps \nto be double \ncrystal drive\ncapacitance
-Wire Wire Line
-	4550 5100 4950 5100
 $Comp
 L Mechanical:MountingHole_Pad H8
 U 1 1 63B86F9D
-P 5550 7000
-F 0 "H8" H 5650 7003 50  0001 L CNN
-F 1 "MountingHole_Pad" H 5650 6958 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5550 7000 50  0001 C CNN
-F 3 "~" H 5550 7000 50  0001 C CNN
-	1    5550 7000
+P 5550 7500
+F 0 "H8" H 5650 7503 50  0001 L CNN
+F 1 "MountingHole_Pad" H 5650 7458 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5550 7500 50  0001 C CNN
+F 3 "~" H 5550 7500 50  0001 C CNN
+	1    5550 7500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H7
 U 1 1 63B7865A
-P 5800 7000
-F 0 "H7" H 5900 7003 50  0001 L CNN
-F 1 "MountingHole_Pad" H 5900 6958 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5800 7000 50  0001 C CNN
-F 3 "~" H 5800 7000 50  0001 C CNN
-	1    5800 7000
+P 5800 7500
+F 0 "H7" H 5900 7503 50  0001 L CNN
+F 1 "MountingHole_Pad" H 5900 7458 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5800 7500 50  0001 C CNN
+F 3 "~" H 5800 7500 50  0001 C CNN
+	1    5800 7500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H6
 U 1 1 63B6FCB0
-P 6050 7000
-F 0 "H6" H 6150 7003 50  0001 L CNN
-F 1 "MountingHole_Pad" H 6150 6958 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6050 7000 50  0001 C CNN
-F 3 "~" H 6050 7000 50  0001 C CNN
-	1    6050 7000
+P 6050 7500
+F 0 "H6" H 6150 7503 50  0001 L CNN
+F 1 "MountingHole_Pad" H 6150 7458 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6050 7500 50  0001 C CNN
+F 3 "~" H 6050 7500 50  0001 C CNN
+	1    6050 7500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3150 6900 3150 6850
 Wire Wire Line
 	3150 6850 2700 6850
 Connection ~ 2700 6850
 Wire Wire Line
-	3400 6900 3400 6850
-Wire Wire Line
 	3400 6850 4000 6850
 Wire Wire Line
 	4000 6850 4000 6800
-Wire Wire Line
-	5550 6400 5550 6900
 $Comp
 L Regulator_Linear:AZ1117-3.3 U3
 U 1 1 6395F931
@@ -1473,21 +1326,19 @@ Text Label 4200 4000 0    50   ~ 0
 W_PULL_LOW_LOGIC
 Text Label 4600 4200 0    50   ~ 0
 FAULT_LOGIC
-Text Label 4200 6200 0    50   ~ 0
+Text Label 4050 5100 0    50   ~ 0
 U_HALL_SENSE_LOGIC
-Text Label 4200 6300 0    50   ~ 0
+Text Label 4050 5200 0    50   ~ 0
 V_HALL_SENSE_LOGIC
-Text Label 4200 6400 0    50   ~ 0
+Text Label 4050 5300 0    50   ~ 0
 W_HALL_SENSE_LOGIC
-Text Label 4200 6500 0    50   ~ 0
-GPIO_A3_INPUT_LOGIC
 Text Label 2250 900  0    50   ~ 0
 UF2_BOOT_LOGIC
 Wire Notes Line
-	3000 6900 3000 7200
+	3000 7400 3000 7700
 Wire Notes Line
-	6200 6900 6200 7200
-Text Notes 3750 7150 0    59   ~ 0
+	6200 7400 6200 7700
+Text Notes 3750 7650 0    59   ~ 0
 Pads for hall sensor cable\nPhysically located near RP2040
 Text Notes 6550 5050 3    50   ~ 0
 Main power input pads
@@ -1611,43 +1462,10 @@ Wire Wire Line
 Connection ~ 5600 1150
 Wire Wire Line
 	5600 1150 5350 1150
-Wire Wire Line
-	5550 6000 5550 5900
-Wire Wire Line
-	5850 5800 5550 5800
-Wire Wire Line
-	5550 5800 5550 5900
-Wire Wire Line
-	5850 5800 5850 5900
-Connection ~ 5550 5900
-Wire Wire Line
-	4600 5400 4550 5400
-Wire Wire Line
-	4800 5350 4800 5400
-Wire Wire Line
-	4800 5400 4700 5400
-Wire Wire Line
-	4700 5400 4700 5300
-Wire Wire Line
-	4700 5300 4550 5300
-Wire Wire Line
-	4300 6000 3950 6000
-Wire Wire Line
-	5200 6000 5550 6000
-Wire Wire Line
-	4900 6000 4600 6000
-Wire Wire Line
-	5800 6300 5800 6900
-Wire Wire Line
-	3950 6300 5800 6300
-Wire Wire Line
-	6050 6900 6050 6200
-Wire Wire Line
-	3950 6200 6050 6200
 Wire Notes Line
-	6200 7200 3000 7200
+	6200 7700 3000 7700
 Wire Notes Line
-	3000 6900 6200 6900
+	3000 7400 6200 7400
 Wire Wire Line
 	10850 3700 10850 4950
 Wire Wire Line
@@ -1882,14 +1700,243 @@ Wire Wire Line
 Wire Wire Line
 	5600 750  5600 1150
 $Comp
-L Diode:1N5822 D?
-U 1 1 635D1E6F
-P 7250 1550
-F 0 "D?" V 7204 1630 50  0000 L CNN
-F 1 "SB5100-T" V 7295 1630 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7250 1375 50  0001 C CNN
-F 3 "https://docs.rs-online.com/b690/0900766b8104c77b.pdf" H 7250 1550 50  0001 C CNN
-	1    7250 1550
-	0    1    1    0   
+L Connector_Generic:Conn_02x04_Top_Bottom J3
+U 1 1 630B307B
+P 4550 6500
+F 0 "J3" H 4600 6167 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 4600 6726 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4550 6500 50  0001 C CNN
+F 3 "~" H 4550 6500 50  0001 C CNN
+	1    4550 6500
+	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4850 5000 4850 4300
+Wire Wire Line
+	4950 5100 4950 5400
+Wire Wire Line
+	4950 5400 6050 5400
+Wire Wire Line
+	5800 5500 4850 5500
+Wire Wire Line
+	4850 5500 4850 5200
+Wire Wire Line
+	4750 5300 4750 5600
+Wire Wire Line
+	4750 5600 5550 5600
+Wire Wire Line
+	3150 6850 3150 7400
+Wire Wire Line
+	3400 6850 3400 7400
+Wire Wire Line
+	5550 5600 5550 7400
+Wire Wire Line
+	5800 5500 5800 7400
+Wire Wire Line
+	6050 5400 6050 7400
+Wire Wire Line
+	4000 6850 4550 6850
+Wire Wire Line
+	4550 6850 4550 6700
+Connection ~ 4000 6850
+$Comp
+L power:GNDPWR #PWR0115
+U 1 1 64479401
+P 5300 7150
+F 0 "#PWR0115" H 5300 6950 50  0001 C CNN
+F 1 "GNDPWR" H 5304 6996 50  0000 C CNN
+F 2 "" H 5300 7100 50  0001 C CNN
+F 3 "" H 5300 7100 50  0001 C CNN
+	1    5300 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6500 4150 6950
+Wire Wire Line
+	4150 6950 4750 6950
+Wire Wire Line
+	4750 6950 4750 6700
+Wire Wire Line
+	4650 6750 4250 6750
+Wire Wire Line
+	4250 6750 4250 6400
+Wire Wire Line
+	4650 6750 4650 6700
+Wire Wire Line
+	4050 6200 4050 6100
+Wire Wire Line
+	4050 6100 4550 6100
+Wire Wire Line
+	4550 6100 4550 6200
+Wire Wire Line
+	4450 6200 4150 6200
+Wire Wire Line
+	4150 6200 4150 6300
+Wire Wire Line
+	4450 6700 4450 7050
+Wire Wire Line
+	4450 7050 5150 7050
+Wire Wire Line
+	5300 7050 5300 7150
+$Comp
+L Device:R R12
+U 1 1 6335F748
+P 5300 6350
+F 0 "R12" V 5093 6350 50  0000 C CNN
+F 1 "100Ω" V 5184 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5230 6350 50  0001 C CNN
+F 3 "~" H 5300 6350 50  0001 C CNN
+	1    5300 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 632EAEFC
+P 5150 6750
+F 0 "R11" V 4943 6750 50  0000 C CNN
+F 1 "100Ω" V 5034 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5080 6750 50  0001 C CNN
+F 3 "~" H 5150 6750 50  0001 C CNN
+	1    5150 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6900 5150 7050
+Connection ~ 5150 7050
+Wire Wire Line
+	5150 7050 5300 7050
+Wire Wire Line
+	5300 6500 5300 7050
+Connection ~ 5300 7050
+Wire Wire Line
+	4600 6000 5150 6000
+Wire Wire Line
+	5150 6000 5150 6600
+Wire Wire Line
+	4350 5900 5300 5900
+Wire Wire Line
+	5300 5900 5300 6200
+Wire Wire Line
+	4650 6200 4650 6100
+Wire Wire Line
+	4650 6100 4750 6100
+Wire Wire Line
+	4750 6100 4750 5800
+Wire Wire Line
+	4750 5800 4550 5800
+Wire Wire Line
+	4550 5800 4550 5500
+Wire Wire Line
+	4150 6500 3950 6500
+Wire Wire Line
+	3950 6400 4250 6400
+Wire Wire Line
+	4150 6300 3950 6300
+Wire Wire Line
+	3950 6200 4050 6200
+Wire Wire Line
+	4300 6000 3950 6000
+Wire Wire Line
+	4050 5900 3950 5900
+Wire Wire Line
+	3950 5300 4750 5300
+Wire Wire Line
+	4850 5200 3950 5200
+Wire Wire Line
+	3950 5100 4950 5100
+Wire Wire Line
+	3950 5000 4850 5000
+Wire Wire Line
+	3950 4900 4750 4900
+Wire Wire Line
+	3950 4800 4650 4800
+Wire Wire Line
+	3950 4700 4550 4700
+Wire Wire Line
+	3950 4600 4050 4600
+Wire Wire Line
+	3950 4500 4050 4500
+Wire Wire Line
+	3950 4400 4050 4400
+Wire Wire Line
+	3950 4300 4050 4300
+Wire Wire Line
+	5300 4200 3950 4200
+Wire Wire Line
+	3950 4000 5300 4000
+Wire Wire Line
+	3950 3900 5300 3900
+Wire Wire Line
+	3950 3800 5300 3800
+Wire Wire Line
+	3950 3700 5300 3700
+Wire Wire Line
+	3950 3600 5300 3600
+Wire Wire Line
+	3950 3500 5300 3500
+Wire Wire Line
+	3950 3200 4950 3200
+Wire Wire Line
+	3950 3100 5050 3100
+Wire Wire Line
+	4550 5500 3950 5500
+$Comp
+L MCU_RaspberryPi_RP2040:RP2040 U2
+U 1 1 63810E10
+P 2700 4800
+F 0 "U2" H 2700 4324 79  0000 C CNN
+F 1 "RP2040" H 2700 2620 50  0001 C CNN
+F 2 "rp2040:RP2040" H 1950 4800 50  0001 C CNN
+F 3 "" H 1950 4800 50  0001 C CNN
+	1    2700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5400 4650 5400
+Wire Wire Line
+	4650 5400 4650 5700
+Wire Wire Line
+	4650 5700 4850 5700
+Wire Wire Line
+	4850 5700 4850 6200
+Wire Wire Line
+	4850 6200 4750 6200
+$Comp
+L Regulator_Linear:LM7805_TO220 U6
+U 1 1 648F1155
+P 6800 1150
+F 0 "U6" H 6800 1392 50  0000 C CNN
+F 1 "LM7805_TO220" H 6800 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6800 1375 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 6800 1100 50  0001 C CNN
+	1    6800 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1150 6350 1150
+Wire Wire Line
+	6350 1150 6350 1900
+Connection ~ 6350 1900
+Wire Wire Line
+	6350 1900 6550 1900
+Wire Wire Line
+	5600 750  7450 750 
+Wire Wire Line
+	7450 750  7450 1150
+Wire Wire Line
+	7450 1150 7100 1150
+Connection ~ 5600 750 
+$Comp
+L power:GNDPWR #PWR0120
+U 1 1 6495003E
+P 6800 1550
+F 0 "#PWR0120" H 6800 1350 50  0001 C CNN
+F 1 "GNDPWR" H 6804 1396 50  0000 C CNN
+F 2 "" H 6800 1500 50  0001 C CNN
+F 3 "" H 6800 1500 50  0001 C CNN
+	1    6800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1550 6800 1450
 $EndSCHEMATC
