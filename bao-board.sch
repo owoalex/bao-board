@@ -283,28 +283,6 @@ Connection ~ 9400 3650
 Wire Wire Line
 	9400 4950 9400 5150
 Connection ~ 9400 5150
-$Comp
-L Device:CP C1
-U 1 1 632F52C2
-P 6650 3300
-F 0 "C1" V 6905 3300 50  0000 C CNN
-F 1 "10uF" V 6814 3300 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6688 3150 50  0001 C CNN
-F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 6650 3300 50  0001 C CNN
-	1    6650 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP C2
-U 1 1 6330328E
-P 6950 3700
-F 0 "C2" V 7205 3700 50  0000 C CNN
-F 1 "10uF" V 7114 3700 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6988 3550 50  0001 C CNN
-F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 6950 3700 50  0001 C CNN
-	1    6950 3700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7400 4100 7400 4400
 Wire Wire Line
@@ -317,17 +295,6 @@ Wire Wire Line
 	6200 3600 6800 3600
 Wire Wire Line
 	6800 3600 6800 3300
-$Comp
-L Device:CP C3
-U 1 1 6336FD0D
-P 7250 4100
-F 0 "C3" V 7505 4100 50  0000 C CNN
-F 1 "10uF" V 7414 4100 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 7288 3950 50  0001 C CNN
-F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 7250 4100 50  0001 C CNN
-	1    7250 4100
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6200 3400 6200 3300
 Wire Wire Line
@@ -742,13 +709,13 @@ Wire Wire Line
 Wire Wire Line
 	7800 3450 9400 3450
 Text Notes 7000 7000 0    50   ~ 0
-Designed by Alex Baldwin\nLicenced under Creative Commons Attribution International (CC-BY)\n\nDocumentation, design and firmware at\nalexbaldwin.dev/hardware
+Designed by Alex Baldwin\nLicenced under Creative Commons Attribution 4.0 International (CC-BY)\n\nDocumentation, design and firmware at\nalexbaldwin.dev/hardware
 Text Notes 7350 7500 0    67   ~ 13
 Bao-Board\n
 Text Notes 10600 7650 0    59   ~ 0
-1.2
+1.3
 Text Notes 8150 7650 0    59   ~ 0
-2023-01-19
+2023-02-14
 $Comp
 L power:GNDPWR #PWR0102
 U 1 1 63912AA5
@@ -1579,7 +1546,7 @@ U 1 1 6390B9C6
 P 10800 1450
 F 0 "C10" V 11055 1450 50  0000 C CNN
 F 1 "1000uF" V 10964 1450 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 10838 1300 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal" H 10838 1300 50  0001 C CNN
 F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 10800 1450 50  0001 C CNN
 	1    10800 1450
 	0    1    1    0   
@@ -1939,4 +1906,37 @@ F 3 "" H 6800 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 1550 6800 1450
+$Comp
+L Device:CP C3
+U 1 1 6336FD0D
+P 7250 4100
+F 0 "C3" V 7505 4100 50  0000 C CNN
+F 1 "10uF" V 7414 4100 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 7288 3950 50  0001 C CNN
+F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 7250 4100 50  0001 C CNN
+	1    7250 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 6330328E
+P 6950 3700
+F 0 "C2" V 7205 3700 50  0000 C CNN
+F 1 "10uF" V 7114 3700 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6988 3550 50  0001 C CNN
+F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 6950 3700 50  0001 C CNN
+	1    6950 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 632F52C2
+P 6650 3300
+F 0 "C1" V 6905 3300 50  0000 C CNN
+F 1 "10uF" V 6814 3300 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6688 3150 50  0001 C CNN
+F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 6650 3300 50  0001 C CNN
+	1    6650 3300
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
