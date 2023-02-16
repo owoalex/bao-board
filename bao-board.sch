@@ -1912,7 +1912,7 @@ U 1 1 6336FD0D
 P 7250 4100
 F 0 "C3" V 7505 4100 50  0000 C CNN
 F 1 "10uF" V 7414 4100 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 7288 3950 50  0001 C CNN
+F 2 "Custom_Capacitors:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 7288 3950 50  0001 C CNN
 F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 7250 4100 50  0001 C CNN
 	1    7250 4100
 	0    -1   -1   0   
@@ -1923,7 +1923,7 @@ U 1 1 6330328E
 P 6950 3700
 F 0 "C2" V 7205 3700 50  0000 C CNN
 F 1 "10uF" V 7114 3700 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6988 3550 50  0001 C CNN
+F 2 "Custom_Capacitors:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6988 3550 50  0001 C CNN
 F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 6950 3700 50  0001 C CNN
 	1    6950 3700
 	0    -1   -1   0   
@@ -1934,7 +1934,7 @@ U 1 1 632F52C2
 P 6650 3300
 F 0 "C1" V 6905 3300 50  0000 C CNN
 F 1 "10uF" V 6814 3300 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6688 3150 50  0001 C CNN
+F 2 "Custom_Capacitors:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal" H 6688 3150 50  0001 C CNN
 F 3 "https://uk.rs-online.com/web/p/aluminium-capacitors/7076417" H 6650 3300 50  0001 C CNN
 	1    6650 3300
 	0    -1   -1   0   
